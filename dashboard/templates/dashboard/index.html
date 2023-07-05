@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability</title>
+</head>
+<body>
+    {%if request.user.is_authenticated%}
+    <div class="nav">
+        <h2>Hello {{request.user.email}}</h2>
+        <a href="{% url 'userena_signout' %}"><button>Logout</button></a>
+    </div>
+    {%else%}
+    <a href="{% url 'userena_signin' %}">
+    <button>Login</button>
+    </a>
+
+    {%endif%}
+</body>
+</html>

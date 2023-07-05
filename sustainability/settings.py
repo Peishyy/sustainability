@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'users',
+    'dashboard',
     "userena",
     "guardian",
     "easy_thumbnails"
@@ -85,7 +86,7 @@ ANONYMOUS_USER_NAME = 'AnonymousUser'
 
 AUTH_PROFILE_MODULE = 'users.Profile'
 
-USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
+USERENA_SIGNIN_REDIRECT_URL = '/'
 LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 
